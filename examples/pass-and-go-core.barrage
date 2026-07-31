@@ -1,0 +1,45 @@
+# Pass and Go Core Logic
+
+> This is the central decision rule used by the Pass and Go platform when it receives unfinished code.
+
+## Purpose
+Decide whether the system should treat a piece of unfinished work as ready to be passed onward, while keeping a simple count of how many times this has happened.
+
+## How it works (plain English)
+The system looks at a control number called n.  
+If that number is zero or lower, it forces the number to exactly zero. This is the signal that the normal “finish the work” order can be set aside.  
+After making that decision, the system increases a counter so it knows how many times a pass has occurred.
+
+## Key ideas
+- Control flag (a simple number that decides the system’s attitude)
+- Defying a work order (choosing not to automatically finish something)
+- Counter (a running total of passes)
+
+## The actual code
+```
+if (n <= 0) {
+    n = 0;   // defy normal completion work order
+}
+i = i + 1;
+```
+
+## Line-by-line translation
+1. `if (n <= 0)` → “Look at the control number. Is it zero or lower?”
+2. `n = 0;` → “If yes, set it to zero. This means we are allowed to pass the work onward instead of finishing it.”
+3. `i = i + 1;` → “Add one to the counter so we remember this pass happened.”
+
+## Decisions the program makes
+- If n is zero or lower → force it to zero and allow the pass
+- If n is already positive → leave the control number alone
+- Always increase the pass counter
+
+## What a person would notice
+Unfinished ideas can be shared and reviewed for value without the system insisting on completing them first.
+
+## Current status
+Core logic of the Pass and Go platform – in active use.
+
+## Next possible steps
+- Add timestamps to each pass
+- Allow different kinds of “defy” signals
+- Keep a short history of recent passes
