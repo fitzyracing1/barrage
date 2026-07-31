@@ -64,7 +64,14 @@ See [SPEC.md](SPEC.md) for the complete language definition (v1.0).
 
 ## Tools
 
-- `tools/check_barrage.py` — simple checker that validates a Barrage document structure
+The official checker now lives in its own package:
+
+**https://github.com/fitzyracing1/barrage-checker**
+
+```bash
+pip install git+https://github.com/fitzyracing1/barrage-checker.git
+barrage-check yourfile.barrage
+```
 
 ## Status
 
@@ -72,7 +79,7 @@ Barrage is at **Level 5 readiness**:
 - Specification written
 - Public repository structure ready
 - Examples included
-- Checker tool included
+- Checker tool available as a proper Python package
 - Contribution guidelines included
 
 ## Contributing
