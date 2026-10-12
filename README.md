@@ -89,3 +89,8 @@ See [CONTRIBUTING.md](CONTRIBUTING.md).
 ## License
 
 Barrage language specification and examples are released under the MIT License.
+
+## Documentation
+
+- In-repo docs: [docs/](docs/overview.md)
+- Wiki: [https://github.com/fitzyracing1/barrage/wiki](https://github.com/fitzyracing1/barrage/wiki)
