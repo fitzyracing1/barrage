@@ -9,3 +9,6 @@ image: /assets/og-image.png
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+webmaster_verifications:
+  google: YqOd5SNLhOQ1KKzSV5g6_CnvR_NHXqiQzb8yqeJ5vt8
