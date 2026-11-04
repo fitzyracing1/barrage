@@ -1,5 +1,36 @@
 # Barrage
 
+**Code, explained in plain English, for everyone.**
+
+[![PyPI](https://img.shields.io/pypi/v/barrage-checker)](https://pypi.org/project/barrage-checker/) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) [![Website](https://img.shields.io/badge/site-github.io-green)](https://fitzyracing1.github.io/barrage/)
+
+Barrage (barrage-lang) is a small, human-readable language (`.barrage` files) that wraps real code with a purpose, a plain-English walkthrough, and line-by-line translations, so a non-programmer can read any program.
+
+```bash
+pip install barrage-checker
+```
+
+[Spec](SPEC.md) · [Examples](examples/) · [Website](https://fitzyracing1.github.io/barrage/) · [Checker](https://github.com/fitzyracing1/barrage-checker)
+
+### Before / after
+
+**Before** (code only):
+
+```c
+if (n <= 0) { n = 0; }
+i = i + 1;
+```
+
+**After** (Barrage):
+
+```barrage
+## How it works (plain English)
+If the number n is zero or lower, set it back to zero.
+Then add one to the counter.
+```
+
+---
+
 **Barrage** is a plain-language format designed to make any code or unfinished program understandable to people who do not program.
 
 It wraps real code with clear everyday explanations so that a complete non-programmer can still grasp the idea, the flow, and the purpose.
@@ -11,7 +42,7 @@ Barrage exists so that **anyone** can read and understand what a piece of code i
 
 ## Quick Example
 
-```barrage
+````barrage
 # Reset and Count
 
 > This small logic keeps a number from going too low and counts how many times the check has run.
@@ -56,7 +87,7 @@ Unfinished core logic – ready for review or further development.
 - Record the time of each reset
 - Set a maximum limit on the counter
 - Notify someone when a reset occurs
-```
+````
 
 ## Official Specification
 

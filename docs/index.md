@@ -1,3 +1,8 @@
+---
+title: "Barrage — plain-English language that makes code readable by anyone"
+description: "Barrage is a plain-English language (.barrage) that explains any code so anyone can read it. Spec, examples, and a Python checker."
+---
+
 # Barrage
 
 **A language that makes code readable by anyone.**

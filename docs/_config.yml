@@ -1,0 +1,11 @@
+title: Barrage
+tagline: plain-English language that makes code readable by anyone
+description: Barrage is a plain-English language (.barrage) that explains any code so programmers and non-programmers alike can read it. Spec, examples, and a Python checker.
+url: https://fitzyracing1.github.io
+baseurl: /barrage
+author: Joshua Almeida
+lang: en_US
+image: /assets/og-image.png
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
